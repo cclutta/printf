@@ -3,7 +3,7 @@
 /**
  * function_manager - function manager
  * @c: char
- * @arg: va_list 
+ * @arg: va_list
  *
  * Return: int
  */
