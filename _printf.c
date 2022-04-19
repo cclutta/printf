@@ -44,9 +44,7 @@ int get_format(va_list arg, const char *string)
 			i++, f++;
 			a = string[i];
 			if (a == '\0' && _strlen((char *)string) == 1)
-			{
 				return (-1);
-			}
 			if (a == '\0')
 				return (c);
 			if (a == '%')
