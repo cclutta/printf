@@ -1,0 +1,17 @@
+.TH man 3 "20 April 2022" "1.0" 
+.SH NAME
+    _printf
+    Prints to standard output
+.SH SYNOPSIS
+    #include m"main.h"
+    int _printf(const char *format, ...).
+.SH DESCRIPTION
+    Prints to standard output
+.SH EXAMPLES
+    _printf("%d", 13); 
+.SH SEE ALSO
+    man printf
+.SH BUGS
+    None
+.SH AUTHOR
+   Chelsea Lutta
