@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* printf - like printf
-* @format - const chhar pointer
-* 
+* _printf - like printf
+* @format: const chhar pointer
+*
 * Return: num
 */
 
@@ -12,17 +12,16 @@ int _printf(const char *format, ...)
 	va_list arg;
 	const char *s;
 	int c = 0;
-	
+
 	if (!format)
 		return (-1);
-	
+
 	va_start(arg, format);
 	s = format;
-	
+
 	c = get_format(arg, s);
 	va_end(arg);
 	return (c);
-	
 }
 /**
 * get_format - get the format
@@ -34,16 +33,10 @@ int _printf(const char *format, ...)
 
 int get_format(va_list arg, const char *string)
 {
-	int i = 0;
-	int c = 0;
-	int c_fm = 0;
-	int percent = 0;
-	int f = 0;
-	
+	int i = 0, c = 0, c_fm = 0, percent = 0, f = 0;
 	while (i < _strlen((char *)string) && *string != '\0')
 	{
 		char a = string[i];
-
 		if (a == '%')
 		{
 			i++, f++;
@@ -59,7 +52,7 @@ int get_format(va_list arg, const char *string)
 			if (a == '%')
 			{
 				f++;
-			} 
+			}
 			else
 			{
 				c_fm = _function_manager(a, arg);
@@ -83,13 +76,12 @@ int get_format(va_list arg, const char *string)
 		percent = 0;
 	}
 	return (c);
-
 }
 
 /**
  * check_percent - check percent
- * @flag: int
- * @aux: character
+ * @f: int
+ * @a: character
  *
  * Return: num
  */
