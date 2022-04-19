@@ -64,7 +64,7 @@ int print_unsign(va_list arg, int base)
  * print_string - print string
  * @arg: va_list
  *
- * Return: num 
+ * Return: num
  */
 int print_string(va_list arg)
 {
@@ -87,7 +87,7 @@ int print_string(va_list arg)
  * print_base16_upper_lower - print_base16_upper_lower
  * @arg: va_list
  * @representation: pointer parameter
- * 
+ *
  * Return: int
  */
 int print_base16_upper_lower(va_list arg, char *representation)
