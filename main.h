@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int _printf(const char *format, ...);
 int get_format(va_list arg, const char *string);
