@@ -23,6 +23,7 @@ int print_ptr(va_list arg);
 int print_rot13(va_list arg);
 int print_rev(va_list arg);
 int print_base16_upper_lower(va_list arg, char *representation);
+int print_character(va_list arg)
 
 #endif
 
