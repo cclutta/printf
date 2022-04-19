@@ -83,7 +83,7 @@ int get_format(va_list arg, const char *string)
 		percent = 0;
 	}
 	return (c);
-}
+
 }
 
 /**
