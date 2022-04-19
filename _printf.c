@@ -34,9 +34,11 @@ int _printf(const char *format, ...)
 int get_format(va_list arg, const char *string)
 {
 	int i = 0, c = 0, c_fm = 0, percent = 0, f = 0;
+
 	while (i < _strlen((char *)string) && *string != '\0')
 	{
 		char a = string[i];
+
 		if (a == '%')
 		{
 			i++, f++;
@@ -46,13 +48,9 @@ int get_format(va_list arg, const char *string)
 				return (-1);
 			}
 			if (a == '\0')
-			{
 				return (c);
-			}
 			if (a == '%')
-			{
 				f++;
-			}
 			else
 			{
 				c_fm = _function_manager(a, arg);
