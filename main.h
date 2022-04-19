@@ -1,3 +1,6 @@
+#ifndef FILE_MAIN
+#define FILE_MAIN
+
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,5 +16,5 @@ int _strlen(char *s);
 void _puts(char *str);
 char *convert_to(char representation[], unsigned int num, int base);
 
-
+#endif
 
