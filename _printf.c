@@ -76,7 +76,7 @@ int get_format(va_list arg, const char *string)
 				}
 			}
 		}
-		percent = check_percent(&flag, aux);
+		percent = check_percent(&f, a);
 		c += percent;
 		if (percent == 0 && a != '\0' && a != '%')
 			c += _putchar(a), i++;
